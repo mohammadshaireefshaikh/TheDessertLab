@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Dessert Lab — Liverpool | Indulgence, Engineered</title>
+  <meta name="description" content="The Dessert Lab, Liverpool. Small-batch waffles, cookie dough, cheesecake and gelato shakes — handcrafted daily in our city dessert laboratory." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Manrope:wght@300;400;500;600;700&family=Ephesis&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Grain texture overlay -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- ============================================================
+       NAVIGATION
+  ============================================================ -->
+  <header class="nav" id="top">
+    <div class="nav__inner">
+      <a href="#top" class="nav__brand" aria-label="The Dessert Lab — home">
+        <!-- Custom SVG brand mark -->
+        <svg class="logo" viewBox="0 0 48 48" role="img" aria-label="The Dessert Lab logo">
+          <circle cx="24" cy="24" r="22.5" fill="none" stroke="currentColor" stroke-width="1.2" opacity="0.55"/>
+          <circle cx="24" cy="24" r="18.5" fill="none" stroke="currentColor" stroke-width="0.6" stroke-dasharray="1.5 3" opacity="0.5"/>
+          <!-- dripping scoop mark -->
+          <path d="M14 22c0-6 4.5-10 10-10s10 4 10 10c0 1.4-1 2.4-2.4 2.4h-1.1c-.9 0-1.6.7-1.6 1.6v3.4c0 1.1-.9 2-2 2s-2-.9-2-2v-2.9c0-.6-.5-1.1-1.1-1.1-.6 0-1.1.5-1.1 1.1v6.3c0 1.1-.9 2-2 2s-2-.9-2-2V26c0-.9-.7-1.6-1.6-1.6h-.7C15 24.4 14 23.4 14 22Z"
+                fill="currentColor"/>
+          <path d="M18 36.5h12" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+        </svg>
+        <span class="nav__wordmark">The Dessert&nbsp;Lab</span>
+      </a>
+
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#story">Our Story</a>
+        <a href="#menu">Menu</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#offers">Offers</a>
+        <a href="#visit">Visit</a>
+      </nav>
+
+      <a href="#visit" class="btn btn--ghost nav__cta">Find Us</a>
+
+      <button class="nav__toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+        <span></span><span></span>
+      </button>
+    </div>
+
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile">
+      <a href="#story">Our Story</a>
+      <a href="#menu">Menu</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#offers">Offers</a>
+      <a href="#visit">Visit</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ============================================================
+         HERO
+    ============================================================ -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__glow hero__glow--1" aria-hidden="true"></div>
+      <div class="hero__glow hero__glow--2" aria-hidden="true"></div>
+
+      <div class="hero__inner">
+        <div class="hero__copy">
+          <p class="eyebrow reveal">Liverpool’s small-batch dessert laboratory</p>
+          <h1 id="hero-title" class="hero__title">
+            <span class="reveal d1">Indulgence,</span>
+            <span class="hero__title-line reveal d2"><em>engineered</em><span class="hero__fullstop">.</span></span>
+          </h1>
+          <p class="hero__lede reveal d3">
+            Belgian waffles, molten cookie dough and silk-smooth cheesecake —
+            tested, tasted and perfected in tiny batches, every single day.
+          </p>
+          <div class="hero__actions reveal d4">
+            <a class="btn btn--gold" href="#menu">View Menu</a>
+            <a class="btn btn--outline" href="#visit">Find Us</a>
+          </div>
+          <p class="hero__note reveal d5">
+            <span class="script">handmade daily</span> — no freezers, no shortcuts
+          </p>
+        </div>
+
+        <div class="hero__visual" aria-hidden="false">
+          <figure class="hero-card hero-card--main parallax" data-depth="12">
+            <img src="https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&fit=crop&w=920&q=80"
+                 alt="Golden Belgian waffle with vanilla gelato and dark chocolate drizzle" width="920" height="1150" />
+            <figcaption class="hero-card__tag">Formula №01 — The Liverpool Waffle</figcaption>
+          </figure>
+
+          <figure class="hero-card hero-card--float-a parallax" data-depth="26">
+            <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=480&q=80"
+                 alt="Strawberry sundae in a tall glass" width="480" height="600" loading="lazy" />
+          </figure>
+
+          <figure class="hero-card hero-card--float-b parallax" data-depth="20">
+            <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=480&q=80"
+                 alt="Stack of freshly baked chocolate chip cookies" width="480" height="360" loading="lazy" />
+          </figure>
+
+          <!-- rotating badge -->
+          <div class="hero__badge" aria-hidden="true">
+            <svg viewBox="0 0 120 120">
+              <defs>
+                <path id="badge-circle" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0" />
+              </defs>
+              <text>
+                <textPath href="#badge-circle">SMALL BATCH · HANDCRAFTED · LIVERPOOL · EST. 2024 ·</textPath>
+              </text>
+              <path d="M52 52c0-5 3.6-8 8-8s8 3 8 8c0 1.1-.8 1.9-1.9 1.9h-.9c-.7 0-1.3.6-1.3 1.3v2.7c0 .9-.7 1.6-1.6 1.6s-1.6-.7-1.6-1.6v-2.3c0-.5-.4-.9-.9-.9s-.9.4-.9.9v5c0 .9-.7 1.6-1.6 1.6s-1.6-.7-1.6-1.6v-4.7c0-.7-.6-1.3-1.3-1.3h-.5C52.8 53.9 52 53.1 52 52Z" class="hero__badge-mark"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <a class="hero__scroll" href="#strip" aria-label="Scroll to explore">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ============================================================
+         MARQUEE STRIP
+    ============================================================ -->
+    <div class="strip" id="strip" aria-hidden="true">
+      <div class="strip__track">
+        <span>Belgian Waffles</span><i>✦</i>
+        <span>Molten Cookie Dough</span><i>✦</i>
+        <span>Baked Cheesecake</span><i>✦</i>
+        <span>Gelato Shakes</span><i>✦</i>
+        <span>French Crêpes</span><i>✦</i>
+        <span>Seasonal Specials</span><i>✦</i>
+        <span>Belgian Waffles</span><i>✦</i>
+        <span>Molten Cookie Dough</span><i>✦</i>
+        <span>Baked Cheesecake</span><i>✦</i>
+        <span>Gelato Shakes</span><i>✦</i>
+        <span>French Crêpes</span><i>✦</i>
+        <span>Seasonal Specials</span><i>✦</i>
+      </div>
+    </div>
+
+    <!-- ============================================================
+         ABOUT / BRAND STORY
+    ============================================================ -->
+    <section class="story section" id="story" aria-labelledby="story-title">
+      <div class="section__inner story__grid">
+        <div class="story__media reveal">
+          <figure class="story__photo">
+            <img src="https://images.unsplash.com/photo-1541783245831-57d6fb0926d3?auto=format&fit=crop&w=760&q=80"
+                 alt="Warm latte with spices on a cosy café table" width="760" height="950" loading="lazy" />
+          </figure>
+          <div class="story__stamp" aria-hidden="true">
+            <span class="script">est. Liverpool</span>
+          </div>
+        </div>
+
+        <div class="story__copy">
+          <p class="eyebrow reveal">Our story</p>
+          <h2 id="story-title" class="section__title reveal d1">
+            Born in Liverpool.<br /><em>Raised on butter.</em>
+          </h2>
+          <div class="story__text reveal d2">
+            <p>
+              The Dessert Lab started as a family obsession: could a waffle be
+              <strong>crisp at the edge, custard-soft in the middle</strong>, and still
+              carry proper single-origin chocolate without collapsing? Forty-three
+              test batches later, Formula №01 was born — and so were we.
+            </p>
+            <p>
+              Everything here is treated like a recipe worth arguing about. Doughs
+              rest a full 24 hours. Chocolate is couverture-grade and melted to order.
+              Cream comes thick from Cheshire dairies, and nothing leaves the pass
+              until it looks as good as it tastes — because we know the first bite
+              happens with a camera.
+            </p>
+          </div>
+
+          <dl class="story__stats reveal d3">
+            <div>
+              <dt>24h</dt>
+              <dd>rested doughs, every batch</dd>
+            </div>
+            <div>
+              <dt>14</dt>
+              <dd>house formulas on the menu</dd>
+            </div>
+            <div>
+              <dt>1</dt>
+              <dd>rule — never serve “fine”</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SIGNATURE MENU
+    ============================================================ -->
+    <section class="menu section" id="menu" aria-labelledby="menu-title">
+      <div class="section__inner">
+        <header class="section__head">
+          <p class="eyebrow reveal">The menu</p>
+          <h2 id="menu-title" class="section__title reveal d1">
+            House <em>formulas</em>
+          </h2>
+          <p class="section__sub reveal d2">
+            Numbered, tested, perfected — and served only until the day’s batch runs out.
+          </p>
+        </header>
+
+        <!-- Featured editorial cards -->
+        <div class="menu__featured">
+          <article class="feature reveal">
+            <figure class="feature__media">
+              <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&w=880&q=80"
+                   alt="Buttermilk pancake stack with berries and syrup" width="880" height="660" loading="lazy" />
+              <span class="badge badge--gold">House Favourite</span>
+            </figure>
+            <div class="feature__body">
+              <p class="feature__no">Formula №01</p>
+              <h3 class="feature__name"><span class="script">The</span> Liverpool Stack</h3>
+              <p class="feature__desc">
+                Buttermilk stack laminated with brown butter, macerated berries,
+                clotted-cream gelato and a pour of warm Belgian couverture at the table.
+              </p>
+              <p class="feature__price">£9.50</p>
+            </div>
+          </article>
+
+          <article class="feature feature--flip reveal">
+            <figure class="feature__media">
+              <img src="https://images.unsplash.com/photo-1587314168485-3236d6710814?auto=format&fit=crop&w=880&q=80"
+                   alt="Warm chocolate brownie squares dusted with cocoa" width="880" height="660" loading="lazy" />
+              <span class="badge badge--berry">Best Seller</span>
+            </figure>
+            <div class="feature__body">
+              <p class="feature__no">Formula №07</p>
+              <h3 class="feature__name"><span class="script">Molten</span> Dough Slab</h3>
+              <p class="feature__desc">
+                Half-baked cookie dough slab, 70% dark pockets, flaked sea salt,
+                madagascan vanilla gelato melting into the middle. Two spoons advised.
+              </p>
+              <p class="feature__price">£8.90</p>
+            </div>
+          </article>
+        </div>
+
+        <!-- Category price lists -->
+        <div class="menu__lists">
+          <div class="menu-col reveal">
+            <h4 class="menu-col__title">Waffles &amp; Crêpes</h4>
+            <ul>
+              <li>
+                <div class="menu-item__head"><span class="menu-item__name">The 24-Carat</span><span class="menu-item__dots"></span><span class="menu-item__price">£8.50</span></div>
+                <p class="menu-item__desc">Belgian waffle, gold-dust white chocolate, pistachio</p>
+              </li>
+              <li>
+                <div class="menu-item__head"><span class="menu-item__name">Parisienne Crêpe</span><span class="menu-item__dots"></span><span class="menu-item__price">£7.90</span></div>
+                <p class="menu-item__desc">Lemon curd, torched meringue, crème fraîche</p>
+              </li>
+              <li>
+                <div class="menu-item__head"><span class="menu-item__name">Biscoff Lab Report <span class="badge badge--mini">New</span></span><span class="menu-item__dots"></span><span class="menu-item__price">£8.20</span></div>
+                <p class="menu-item__desc">Crêpe, caramelised biscuit butter, espresso cream</p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="menu-col reveal d1">
+            <h4 class="menu-col__title">Cheesecake &amp; Bakes</h4>
+            <ul>
+              <li>
+                <div class="menu-item__head"><span class="menu-item__name">Basque Burnt Slice</span><span class="menu-item__dots"></span><span class="menu-item__price">£6.80</span></div>
+                <p class="menu-item__desc">Caramelised top, molten centre, no crust, no apologies</p>
+              </li>
+              <li>
+                <div class="menu-item__head"><span class="menu-item__name">Berry Mascarpone</span><span class="menu-item__dots"></span><span class="menu-item__price">£6.50</span></div>
+                <p class="menu-item__desc">Baked vanilla cheesecake, macerated seasonal berries</p>
+              </li>
+              <li>
+                <div class="menu-item__head"><span class="menu-item__name">Chocolate Sea-Salt Torte</span><span class="menu-item__dots"></span><span class="menu-item__price">£7.20</span></div>
+                <p class="menu-item__desc">Flourless, single-origin 70%, crème chantilly</p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="menu-col reveal d2">
+            <h4 class="menu-col__title">Sundaes &amp; Shakes</h4>
+            <ul>
+              <li>
+                <div class="menu-item__head"><span class="menu-item__name">The Tall Experiment <span class="badge badge--mini badge--fav">★</span></span><span class="menu-item__dots"></span><span class="menu-item__price">£7.50</span></div>
+                <p class="menu-item__desc">Layered gelato sundae, honeycomb shards, warm fudge</p>
+              </li>
+              <li>
+                <div class="menu-item__head"><span class="menu-item__name">Velvet Shake</span><span class="menu-item__dots"></span><span class="menu-item__price">£6.20</span></div>
+                <p class="menu-item__desc">Gelato-blended, choice of formula, torched marshmallow lid</p>
+              </li>
+              <li>
+                <div class="menu-item__head"><span class="menu-item__name">Affogato al Lab</span><span class="menu-item__dots"></span><span class="menu-item__price">£5.40</span></div>
+                <p class="menu-item__desc">Double espresso drowned over vanilla-bean gelato</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="menu__footnote reveal">
+          <span class="script">allergies?</span> — every formula is logged; ask the team for the full ingredient sheet.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         GALLERY
+    ============================================================ -->
+    <section class="gallery section" id="gallery" aria-labelledby="gallery-title">
+      <div class="section__inner">
+        <header class="section__head section__head--split">
+          <div>
+            <p class="eyebrow reveal">Dessert moments</p>
+            <h2 id="gallery-title" class="section__title reveal d1">Made to be <em>shared</em></h2>
+          </div>
+          <p class="section__sub reveal d2">
+            Tag <strong>@thedessertlab</strong> — the best table shots earn a free scoop.
+          </p>
+        </header>
+
+        <div class="gallery__grid">
+          <figure class="gallery__item g1 reveal">
+            <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=760&q=80"
+                 alt="Chocolate mousse jars with cream and shavings" loading="lazy" />
+            <figcaption>#moussehour</figcaption>
+          </figure>
+          <figure class="gallery__item g2 reveal d1">
+            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=760&q=80"
+                 alt="Slice of layered chocolate cake with ganache" loading="lazy" />
+            <figcaption>#tortesundays</figcaption>
+          </figure>
+          <figure class="gallery__item g3 reveal d2">
+            <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=760&q=80"
+                 alt="Chocolate glazed doughnut with sprinkles" loading="lazy" />
+            <figcaption>#glazedandconfused</figcaption>
+          </figure>
+          <figure class="gallery__item g4 reveal">
+            <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&w=760&q=80"
+                 alt="Plated patisserie dessert with cream layers" loading="lazy" />
+            <figcaption>#plateperfect</figcaption>
+          </figure>
+          <figure class="gallery__item g5 reveal d1">
+            <img src="https://images.unsplash.com/photo-1488900128323-21503983a07e?auto=format&fit=crop&w=760&q=80"
+                 alt="Strawberry shake in glass bottles with straws" loading="lazy" />
+            <figcaption>#velvetshake</figcaption>
+          </figure>
+          <figure class="gallery__item g6 reveal d2">
+            <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=760&q=80"
+                 alt="Strawberry shortcake with whipped cream" loading="lazy" />
+            <figcaption>#seasonlab</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         OFFERS / SEASONAL SPOTLIGHT
+    ============================================================ -->
+    <section class="offers section" id="offers" aria-labelledby="offers-title">
+      <div class="section__inner">
+        <header class="section__head">
+          <p class="eyebrow eyebrow--rose reveal">Limited editions</p>
+          <h2 id="offers-title" class="section__title reveal d1">
+            In the lab <em>right now</em>
+          </h2>
+        </header>
+
+        <div class="offers__grid">
+          <article class="offer offer--hero reveal">
+            <p class="offer__label">Seasonal formula</p>
+            <h3 class="offer__name"><span class="script">Black Forest</span> Winter Waffle</h3>
+            <p class="offer__desc">
+              Dark chocolate waffle, kirsch-poached cherries, chantilly and bitter
+              cocoa shards. On the pass until the last cherry goes.
+            </p>
+            <p class="offer__meta">£9.90 · while it lasts</p>
+          </article>
+
+          <article class="offer reveal d1">
+            <p class="offer__label">Student Sundays</p>
+            <h3 class="offer__name">20% off with valid ID</h3>
+            <p class="offer__desc">Every Sunday after 4pm. Bring the study group, leave the laptops.</p>
+          </article>
+
+          <article class="offer reveal d2">
+            <p class="offer__label">Midweek Duo</p>
+            <h3 class="offer__name">Two formulas, £15</h3>
+            <p class="offer__desc">Any two signature desserts, Tuesday–Thursday. Sharing optional.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         REVIEWS
+    ============================================================ -->
+    <section class="reviews section" id="reviews" aria-labelledby="reviews-title">
+      <div class="section__inner">
+        <header class="section__head">
+          <p class="eyebrow reveal">Word on the street</p>
+          <h2 id="reviews-title" class="section__title reveal d1">
+            People keep <em>talking</em>
+          </h2>
+        </header>
+
+        <div class="reviews__grid">
+          <blockquote class="review reveal">
+            <div class="review__stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p>“The waffle arrived looking like it came off a magazine cover — and somehow tasted better than it looked. The chocolate pour at the table is theatre.”</p>
+            <footer><cite>Amara O.</cite><span>Google review</span></footer>
+          </blockquote>
+
+          <blockquote class="review reveal d1">
+            <div class="review__stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p>“Cosy, dim, gorgeous little place. We came for one cookie dough and stayed two hours. The velvet shake with the torched marshmallow lid is ridiculous.”</p>
+            <footer><cite>Josh &amp; Ellie</cite><span>Google review</span></footer>
+          </blockquote>
+
+          <blockquote class="review reveal d2">
+            <div class="review__stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p>“Basque cheesecake was still warm in the middle. Staff talked us through the menu like sommeliers. Best dessert spot in Liverpool, not close.”</p>
+            <footer><cite>Priya S.</cite><span>Google review</span></footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         VISIT US
+         EDIT: replace all placeholder business details below.
+    ============================================================ -->
+    <section class="visit section" id="visit" aria-labelledby="visit-title">
+      <div class="section__inner visit__grid">
+        <div class="visit__info">
+          <p class="eyebrow reveal">Visit the lab</p>
+          <h2 id="visit-title" class="section__title reveal d1">
+            Find your <em>table</em>
+          </h2>
+
+          <dl class="visit__details reveal d2">
+            <!-- EDIT: address -->
+            <div>
+              <dt>Address</dt>
+              <dd>Hughes House, 101–103 London Road<br />Liverpool L3 8JA</dd>
+            </div>
+            <!-- EDIT: phone -->
+            <div>
+              <dt>Phone</dt>
+              <dd><a href="tel:+447887156152">07887 156152</a></dd>
+            </div>
+            <!-- EDIT: email -->
+            <div>
+              <dt>Email</dt>
+              <dd><a href="mailto:hello@thedessertlab.co.uk">hello@thedessertlab.co.uk</a></dd>
+            </div>
+            <!-- EDIT: transport / landmark note -->
+            <div>
+              <dt>Getting here</dt>
+              <dd>Five minutes’ walk from Lime Street Station, on the London Road shopping stretch. Most city-centre buses stop along London Road; on-street and Q-Park city parking nearby.</dd>
+            </div>
+          </dl>
+
+          <!-- EDIT: delivery partners — placeholder pills, no integration -->
+          <div class="visit__delivery reveal d3">
+            <p>Order in via</p>
+            <div class="visit__pills">
+              <span class="pill">Uber Eats</span>
+              <span class="pill">Deliveroo</span>
+              <span class="pill">Just Eat</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="visit__side">
+          <!-- EDIT: opening hours -->
+          <div class="hours reveal">
+            <h3 class="hours__title"><span class="script">opening</span> Hours</h3>
+            <table>
+              <tbody>
+                <tr><th scope="row">Mon – Thu</th><td>12:00 – 22:30</td></tr>
+                <tr><th scope="row">Fri – Sat</th><td>12:00 – 23:30</td></tr>
+                <tr><th scope="row">Sunday</th><td>13:00 – 22:00</td></tr>
+              </tbody>
+            </table>
+            <p class="hours__note">Kitchen closes 30 minutes before the doors do.</p>
+          </div>
+
+          <!-- Stylised map card — links to the real listing -->
+          <a class="map-card reveal d1"
+             href="https://maps.app.goo.gl/fkXzuqRyaXcvK2hA7"
+             target="_blank" rel="noopener">
+            <svg viewBox="0 0 400 220" aria-hidden="true" preserveAspectRatio="xMidYMid slice">
+              <rect width="400" height="220" fill="none"/>
+              <path d="M-20 60 Q120 20 220 80 T 440 90" class="map-road map-road--wide"/>
+              <path d="M-20 150 Q140 190 260 140 T 440 170" class="map-road"/>
+              <path d="M120 -20 Q100 90 160 240" class="map-road"/>
+              <path d="M300 -20 Q320 110 260 240" class="map-road map-road--thin"/>
+              <circle cx="205" cy="105" r="26" class="map-pulse"/>
+              <g transform="translate(205 105)">
+                <path d="M0 -18c-7.2 0-13 5.6-13 12.6C-13 4 0 18 0 18S13 4 13-5.4C13-12.4 7.2-18 0-18Z" class="map-pin"/>
+                <circle cx="0" cy="-5" r="4.6" class="map-pin-dot"/>
+              </g>
+            </svg>
+            <span class="map-card__label">Open in Google Maps ↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer">
+    <div class="section__inner footer__grid">
+      <div class="footer__brand">
+        <svg class="logo logo--footer" viewBox="0 0 48 48" role="img" aria-label="The Dessert Lab logo">
+          <circle cx="24" cy="24" r="22.5" fill="none" stroke="currentColor" stroke-width="1.2" opacity="0.55"/>
+          <path d="M14 22c0-6 4.5-10 10-10s10 4 10 10c0 1.4-1 2.4-2.4 2.4h-1.1c-.9 0-1.6.7-1.6 1.6v3.4c0 1.1-.9 2-2 2s-2-.9-2-2v-2.9c0-.6-.5-1.1-1.1-1.1-.6 0-1.1.5-1.1 1.1v6.3c0 1.1-.9 2-2 2s-2-.9-2-2V26c0-.9-.7-1.6-1.6-1.6h-.7C15 24.4 14 23.4 14 22Z" fill="currentColor"/>
+          <path d="M18 36.5h12" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+        </svg>
+        <p class="footer__word">The Dessert&nbsp;Lab</p>
+        <p class="footer__tag script">indulgence, engineered</p>
+      </div>
+
+      <nav class="footer__col" aria-label="Footer">
+        <h4>Explore</h4>
+        <a href="#story">Our Story</a>
+        <a href="#menu">Menu</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#offers">Offers</a>
+        <a href="#visit">Visit</a>
+      </nav>
+
+      <div class="footer__col">
+        <h4>Contact</h4>
+        <!-- EDIT: contact summary -->
+        <p>Hughes House, 101–103 London Road<br />Liverpool L3 8JA</p>
+        <p><a href="tel:+447887156152">07887 156152</a></p>
+        <p><a href="mailto:hello@thedessertlab.co.uk">hello@thedessertlab.co.uk</a></p>
+      </div>
+
+      <div class="footer__col">
+        <h4>Hours</h4>
+        <!-- EDIT: hours summary -->
+        <p>Mon–Thu · 12–22:30</p>
+        <p>Fri–Sat · 12–23:30</p>
+        <p>Sun · 13–22:00</p>
+        <div class="footer__social">
+          <!-- EDIT: social links -->
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="TikTok">TT</a>
+          <a href="#" aria-label="Facebook">FB</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__base">
+      <p>© <span id="year">2026</span> The Dessert Lab · Liverpool. View-only prototype — details are placeholders.</p>
+    </div>
+  </footer>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
